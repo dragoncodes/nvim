@@ -47,8 +47,6 @@ return {
 
   {
     "tpope/vim-surround",
-    config = function()
-      require("surround").setup {}
-    end,
+    lazy = false,
   },
 }
