@@ -7,6 +7,19 @@ return {
     end,
   },
 
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = function()
+      local conf = require "nvchad.configs.telescope"
+
+      table.insert(conf.defaults.file_ignore_patterns, "%.jpg")
+      table.insert(conf.defaults.file_ignore_patterns, "%.png")
+      table.insert(conf.defaults.file_ignore_patterns, "%.ico")
+
+      return conf
+    end,
+  },
+
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
