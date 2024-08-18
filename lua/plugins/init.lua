@@ -39,6 +39,7 @@ return {
         "css-lsp",
         "prettier",
         "typescript-language-server",
+        "codelldb",
       },
     },
   },
@@ -61,5 +62,21 @@ return {
   {
     "tpope/vim-surround",
     lazy = false,
+  },
+
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "williamboman/mason.nvim",
+      "mfussenegger/nvim-dap",
+    },
+    opts = {
+      handlers = {},
+    },
+  },
+
+  {
+    "mfussenegger/nvim-dap",
   },
 }

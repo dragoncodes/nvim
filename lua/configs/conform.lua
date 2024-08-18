@@ -5,6 +5,7 @@ local options = {
     typescriptreact = { "biome" },
     javascript = { "biome" },
     javascriptreact = { "biome" },
+    c = { "clangd" }
     -- css = { "prettier" },
     -- html = { "prettier" },
   },
